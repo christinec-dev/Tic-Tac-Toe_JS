@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!------------------------------------------- Important Meta Tags  --------------------------------->
+    <meta charset="UTF-8">
+    <meta name="description" content="Tic Tac Toe Game">
+    <meta name="author" content="Christine Coomans" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!------------------------------------------- Page Tab ------------------------------------------->
+    <link rel="icon" href="game-logo.png" type="image/gif">
+
+    <title>Tic-Tac-Toe </title>
+
+    <!------------------------------------------- Style Sheets----------------------------------------->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!------------------------------------------- Winner Announcement Alert ------------------------------>
+    <div class="winner-board">
+        <p class="winner-paragraph"></p>
+        <img class="winner-img" src="winner.png" alt="winner image on game over"></img>
+    </div>
+
+    <!------------------------------------------- Welcome Announcement Alert ----------------------------->
+    <div class="welcome-screen">
+        <p class="click-to-play">Click Anywhere To Play!</p>
+        <img class="welcome-img" src="welcome.png" alt="welcome image on game start"></img>
+    </div>
+
+    <!------------------------------------------- Player Option Screen ----------------------------------->
+    <div id="main-wrapper">
+        <div class="dashboard">
+            <h1 class="ttt-heading">Tic-Tac-Toe</h1>
+        </div>
+        <div class="player-form">
+            <form>
+                <div class="form-group">
+                    <h2 class="player-select">Player X:</h2>
+                    <input type="text" name="playerOneName" id="player-one-name"
+                        placeholder="Enter the name of Player One" class="form-control">
+                </div>
+                <div class="form-group">
+                    <h2 class="player-select">Player O:</h2>
+                    <input type="text" name="playerTwoName" id="player-two-name"
+                        placeholder="Enter the name of Player Two" class="form-control">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-play">START GAME!</button>
+                </div>
+            </form>
+        </div>
+
+        <!------------------------------------ Game Board --------------------------------------------->
+        <div id="board">
+        </div>
+    </div>
+
+    <!--------------------------------------- Javascript Scripts -------------------------------------->
+    <script src="script.js" type="text/javascript"></script>
+
+</body>
+
+</html>

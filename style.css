@@ -1,0 +1,220 @@
+/*------------------- Credentials -------------------------- 
+Author: Christine Coomans
+Date Created: 2020/09/11
+/*----------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@300;400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+/*------------------------------General Styling ----------------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+/*------------------------------ Player Option Screen ----------------------------*/
+#main-wrapper {
+    width: 100%;
+    background: #3F2B96;
+    background: -webkit-linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+    background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+    padding: 10px;
+}
+
+.sign {
+    font-size: 64px;
+}
+
+.sign p {
+    margin: 0;
+}
+
+.ttt-heading {
+    text-align: center;
+    padding-top: 0.8em;
+    padding-bottom: 0.7em;
+    font-size: 50px;
+    font-family: 'Luckiest Guy',
+        cursive;
+    letter-spacing: 3px;
+    color: #fff;
+    text-shadow: 1px 1px #2323238e;
+}
+
+.form-group {
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+form {
+    padding-top: 5.5em;
+}
+
+h2 {
+    color: #232323;
+    font-weight: 500;
+    font-size: 22px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+
+.form-control {
+    width: 20%;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 7px;
+    border: none;
+    box-shadow: 1px 1px #2323237d;
+}
+
+.btn {
+    margin-top: 30px;
+    width: 10%;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 7px;
+    border: none;
+    color: #fff;
+    background-color: #232323;
+    border-radius: 5px 5px;
+}
+
+.btn:hover {
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    box-shadow: 1px 1px #2323237d;
+    color: #232323;
+}
+
+.welcome-img {
+    width: 265px;
+    margin-top: 5em;
+    margin-left: -5em;
+    margin-right: -5em;
+}
+
+/*------------------------------Game Board Styling ----------------------------*/
+
+#board {
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px auto 0 auto;
+}
+
+.box {
+    height: 30%;
+    width: 30%;
+    background-color: white;
+    border: 1px solid rgb(210, 152, 255);
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: #232323;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.X {
+    color: #FBAB7E;
+    margin: 0;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.X:before {
+    content: "X"
+}
+
+.O {
+    color: #9d72f8;
+    margin: 0;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.O:before {
+    content: "O"
+}
+
+.turn {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.player-X {
+    color: #ffffff;
+}
+
+.player-O {
+    color: rgb(209, 222, 241);
+}
+
+/*------------------------------ Welcome Screen Styling ----------------------------*/
+
+.welcome-screen {
+    z-index: 21;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #6441A5;
+    background: -webkit-linear-gradient(to right, #2a0845, #6441A5);
+    background: linear-gradient(to right, #2a0845, #6441A5);
+    display: flex;
+    max-height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.click-to-play {
+    font-size: 65px;
+    font-weight: 500;
+    font-family: 'Luckiest Guy',
+        cursive;
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 1px 1px #2323238e;
+}
+
+
+/*------------------------------ Winner Screen Styling ----------------------------*/
+
+.winner-board {
+    display: none;
+    z-index: 21;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00ff88;
+    justify-content: center;
+    align-items: center;
+}
+
+.winner-paragraph {
+    font-size: 64px;
+    font-weight: 300;
+    color: #232323;
+    font-family: 'Luckiest Guy',
+        cursive;
+    letter-spacing: 3px;
+}
+
+.winner-img {
+    width: 265px;
+    margin-top: 0.5em;
+    margin-left: -5.5em;
+    margin-right: -5.5em;
+}
